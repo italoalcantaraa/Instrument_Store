@@ -13,7 +13,7 @@
 	
 	<jsp:include page="../../includes/Header.jsp"/>
 	<h1>Home</h1>
-	
+	<p>opa</p>
 	<div class="produtos">
 		<% 
 			ProdutosList.produtosList.add(new Produtos("https://cdn3.iconfinder.com/data/icons/solid-locations-icon-set/64/Music_Band_2-256.png", "Guitarra Cassio Red Elétrica", 500));
