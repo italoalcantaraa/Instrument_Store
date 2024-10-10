@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+  margin: 10;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+.menu{
+    box-sizing: border-box;
+    width: 200px;
+    border: 3px solid;
+    padding: 140px;
+    background-color: #F1DFB3;
+}
+
+.texto{
+    text-align: center;
+}
+
+
+.texto p{
+    align-items: center;
+    color: red;
+}
+
+.info p {
+    color: red;
+    position: absolute;
+    top: 80px;
+    left: 400px;
+    font-size: 16px;
+}

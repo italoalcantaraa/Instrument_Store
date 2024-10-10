@@ -1,0 +1,104 @@
+*{
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: font;
+}
+
+@font-face {
+	font-family: font;
+	src: url("../../fonts/MontserratAlternates-Regular.ttf");
+	
+}
+
+body{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+body > h1{
+	margin: 40px;
+}
+
+.produtos{
+	display: grid;
+	max-width: 1200px;
+	grid-template-columns: repeat(4, 1fr);
+	width: 90%;
+	padding: 20px;
+	gap: 80px;
+	margin: 0 auto;
+}
+
+.produtos .produto{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 200px;
+	gap: 15px;
+}
+
+.produtos .img_produto{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background: #F1DFB3;
+	box-shadow: 1px 6px 5px 0px #808080;
+}
+
+.produtos .img_produto img{
+	width: 200px;
+	position: relative;
+	bottom: 30px;
+}
+.produtos #desc{
+	text-align: left;
+	font-size: 20px;	
+}
+
+.produtos .preco_produto{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.produtos .preco_produto img{
+	width: 25px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+form{
+ 	width: 100%;
+}
+
+form input {
+	width: 100%;
+	color: white;
+	font-size: 16px;
+	padding: 7px;
+	border-radius: 7px;
+	background: #241711;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+form input:hover {
+	opacity: 85%;
+	transition: 0.5s;
+}
+
+.sem_produtos{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 100px;
+	font-size: 30px;
+
+}

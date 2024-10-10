@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: font;
+	src: url("../../fonts/MontserratAlternates-Regular.ttf");
+	
+}
+
+*{
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: font;
+}
+
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px;
+}
+
+.container_pedidos{
+	width: 80%;
+}
+
+.titulo_voltar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	color: black;	
+	width: 100%;
+}
+
+.titulo_voltar > div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 250px;
+	
+}
+
+.titulo_voltar div > div{
+	height: 40px;
+	width: 6px;
+	background: #F0D085;
+	border-radius: 3px;	
+}	
+
+.titulo_voltar a {
+	outline: none;
+	padding: 10px 20px;
+	background: #F0D085;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 20px;
+	transition: 0.5s;
+}
+
+.titulo_voltar a:hover{
+	opacity: 70%;
+	transition: 0.5s;
+}
+
+table{
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	margin-top: 100px;
+}
+
+table tr{
+	margin-bottom: 10px;
+}
+
+table .cabecalho{
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding: 10px;	
+}
+
+table .cabecalho th{
+	width: 0;
+}
+ 
+  .cabecalho th:nth-child(2) {
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
+  }
+
+  .cabecalho th:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+table .cabecalho th{
+	padding: 6px;		
+}
+
+table #espaco{
+	background: white;
+}
+img{
+	width: 120px;		
+}
+
+table .pedido {
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#icon {
+	width: 40px;
+}
+#cdg{
+	font-size: 25px;
+}
+
