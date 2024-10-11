@@ -1,5 +1,5 @@
 @charset "UTF-8";
-              
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: 'font';
-    src: url("../fonts/Montserrat-Medium.ttf");
+    font-family:'font';
+    src: url("../fonts/MontserratAlternates-Regular.ttf");
 }
 
 footer {
@@ -22,6 +22,7 @@ footer {
 
 .informacoes {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
@@ -50,16 +51,16 @@ footer img {
     width: 100%;
 }
 
-#pag{
-	display: flex;
-	justify-content: center;
-	background: white;
-	padding: 10px 5px 10px 5px;
-	border-radius: 3px;
-	
-	img{
-		width: 60px;
-	}
+#pag {
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 10px 5px 10px 5px;
+    border-radius: 3px;
+
+    img {
+        width: 60px;
+    }
 }
 
 h1 {
@@ -91,29 +92,53 @@ h1 {
     margin: 0 auto;
 }
 
-.siga-nos{
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+.siga-nos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.siga-nos div{
-	flex-direction: row !important;
-	align-items: center;
-	cursor: pointer;
-	
-	img{
-		width: 30px;
-	}
-	
-	h1{
-		margin-bottom: 0px;
-	}
+.siga-nos div {
+    flex-direction: row !important;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+        width: 30px;
+    }
+
+    h1 {
+        margin-bottom: 0px;
+    }
 }
 
 
-.siga-nos div:hover{
-	a{
-		text-decoration: underline;
+.siga-nos div:hover {
+    a {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 500px) {
+	body{
+	background: red;
 	}
+    .informacoes>div {
+        margin-top: 50px;
+    }
+
+    #direitos_reservados p {
+        text-align: center;
+    }
+
+    .pagamento .formas_pagamento {
+        gap: 10px;
+        max-width: 400px;
+    }
+
+    #pag {
+        img {
+            width: 110px;
+        }
+    }
 }

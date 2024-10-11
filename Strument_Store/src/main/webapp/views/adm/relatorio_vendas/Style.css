@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+	font-family:font;
+	src: url("../../../fonts/MontserratAlternates-Regular.ttf");
+	
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -16,6 +23,7 @@ body{
 }
 
 .container_vendas{
+	font-family:font;
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
