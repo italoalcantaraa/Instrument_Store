@@ -1,0 +1,107 @@
+.infoDin{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    width: 62%;
+    font-size: 20px;
+    height: 60px;
+}
+.o{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 40%;  
+}
+h6{
+    margin-top: 2px;
+    font-size: 17px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
+
+.add{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.btn-s {
+    padding: 0 10px;
+    height: 50%;
+    background-color: rgba(211, 196, 159, 1);
+    border: none;
+    width: 30px;
+    font-size: 20px;
+}
+
+
+.btn-s[value="+"], .btn-s[value="-"] {
+    color: black;
+    background-color: rgba(211, 196, 159, 1); 
+}
+
+.add p {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    width: 5%;
+    background-color: rgba(241, 223, 179, 1);
+    height: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-cart-btn {
+    background-color: rgba(36, 23, 17, 1);
+    color: white;
+    width: 30%;
+    border-radius: 9px;
+    height: 40px;
+    border: none;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+.desc{
+    position: relative;
+}
+
+.desc-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(241, 223, 179, 1);
+    width: 10%;
+    height: 30px;
+}
+.desc hr{
+    background-color: gray;
+    border: none; 
+    height: 1px; 
+    margin: 0;
+}
+#brown{
+    background-color: rgba(36, 23, 17, 1);
+    border: none; 
+    height: 3px; 
+    width: 10%;
+    position: absolute; 
+    top: 0; 
+}
+.desc-box h5{
+    color: rgba(36, 23, 17, 1);
+    font-family: Montserrat;
+    font-size: 17px;
+}
+
+article p{
+    font-family: Montserrat;
+    font-weight: bold;
+}
