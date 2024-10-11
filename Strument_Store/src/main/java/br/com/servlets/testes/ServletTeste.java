@@ -6,6 +6,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import javax.swing.Popup;
+
+import br.com.teste.PopUp;
+
 public class ServletTeste extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -18,6 +22,9 @@ public class ServletTeste extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		PopUp.enabled = !PopUp.enabled;
+		response.sendRedirect("../Strument_Store/views/adm/relatorio_vendas/RelatorioVendas.jsp");
 	}
 
 }

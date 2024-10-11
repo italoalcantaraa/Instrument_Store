@@ -1,3 +1,4 @@
+<%@page import="br.com.teste.PopUp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,7 +9,17 @@
 <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
-<div class="container_vendas">
+
+<form action="${pageContext.request.contextPath}/ServletTeste" method="post">
+	<input type="submit" value="Clique aqui!">
+</form>
+
+
+
+<div 
+	style="<% if(PopUp.enabled) out.print("display: none;"); %>"
+	
+	class="container_vendas">
         <p>Venda nº10</p>
 
         <table>
