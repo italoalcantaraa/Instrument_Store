@@ -69,4 +69,14 @@
     <servlet-name>ProdutoServlet</servlet-name>
     <url-pattern>/ProdutoServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletPopUp</display-name>
+    <servlet-name>ServletPopUp</servlet-name>
+    <servlet-class>br.com.servlets.ServletPopUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletPopUp</servlet-name>
+    <url-pattern>/ServletPopUp</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -26,6 +26,11 @@ article{
     text-align: center;
 
     width: 100%;
+    color:black !important;
+}
+
+.parede-cabecalho h2 > a{
+	color:black !important;
 }
 
 .logo{
@@ -56,6 +61,7 @@ article{
 
         margin-left: 1em;
         cursor: pointer;
+        color: black;
     }
 
     img{

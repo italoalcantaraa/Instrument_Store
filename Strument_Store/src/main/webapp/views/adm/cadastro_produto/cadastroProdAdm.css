@@ -1,11 +1,5 @@
-@charset "UTF-8";
-
 * {
     margin: 0px;
-}
-
-a{
-	color: black;
 }
 
 body {
@@ -31,7 +25,12 @@ article{
 
     text-align: center;
 
-    width: 50%;
+    width: 100%;
+    color:black !important;
+}
+
+.parede-cabecalho h2 > a{
+	color:black !important;
 }
 
 .logo{
@@ -62,6 +61,7 @@ article{
 
         margin-left: 1em;
         cursor: pointer;
+        color: black;
     }
 
     img{
@@ -83,7 +83,7 @@ article{
     display: flex;
     flex-direction: row;
     
-    margin-top: 60%;
+    margin-top: 50%;
 
     h2{
         font-family: "Montserrat";
