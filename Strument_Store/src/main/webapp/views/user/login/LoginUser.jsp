@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/user/login/LoginUser.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/user/login/LoginUserStyle.css">
 </head>
 <body>
     <div class="container_login">
@@ -35,5 +35,7 @@
 
         </form>
     </div>
+    
+    <jsp:include page="../../../includes/Footer.jsp" />
 </body>
 </html>

@@ -1,4 +1,4 @@
-package br.com.servlets.cadastro;
+package br.com.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -7,10 +7,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class CadastroServlet extends HttpServlet {
+public class CadastroUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public CadastroServlet() {
+    public CadastroUserServlet() {
         super();
     }
 
@@ -19,9 +19,6 @@ public class CadastroServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		
-		
 		try {
 			String nome = request.getParameter("nome");
 			String email = request.getParameter("email");
@@ -30,8 +27,7 @@ public class CadastroServlet extends HttpServlet {
 			String senha = request.getParameter("senha");
 			String confirmaSenha = request.getParameter("confirmaSenha");
 			String cidade = request.getParameter("cidade");
-			
-			
+						
 			
 			if(nome == null || nome == "") {
 				request.setAttribute("erroNome", "*Informe o nome*");
@@ -79,8 +75,6 @@ public class CadastroServlet extends HttpServlet {
 			
 		}catch (Exception e) {
 		}
-		
-	
 	}
 
 }

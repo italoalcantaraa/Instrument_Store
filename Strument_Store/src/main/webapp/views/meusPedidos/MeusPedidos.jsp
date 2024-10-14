@@ -1,6 +1,6 @@
 <%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
-<%@page import="br.com.teste.Pedidos"%>
-<%@page import="br.com.teste.PedidosList"%>
+<%@page import="br.com.model.Pedidos"%>
+<%@page import="br.com.model.PedidosList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

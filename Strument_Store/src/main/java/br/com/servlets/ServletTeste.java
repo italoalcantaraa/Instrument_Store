@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import javax.swing.Popup;
 
-import br.com.teste.PopUp;
+import br.com.model.PopUp;
 
 public class ServletTeste extends HttpServlet {
 	private static final long serialVersionUID = 1L;

@@ -1,4 +1,4 @@
-package br.com.teste;
+package br.com.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+}
+
+a{
+	color: black;
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+main {
+    display: flex;
+    background-color: #fff;
+    margin: 2em;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+.parede-cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F1DFB3;
+
+    text-align: center;
+
+    width: 50%;
+}
+
+.logo{
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-top: 2.5em;
+
+    img{
+        height: 150px;
+        width: 290px;
+    }
+}
+
+.row{
+
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 12%;
+    
+    h2{
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 1.2em;
+
+        margin-left: 1em;
+        cursor: pointer;
+    }
+
+    img{
+        height: 2%;
+        width: 30px;
+
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    h2:hover{
+        transform: scale(1.1);
+        border-bottom: 2px solid #241711;
+    }
+}
+
+.row-exit{
+
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 60%;
+
+    h2{
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 1.2em;
+
+        margin-left: 1em;
+        cursor: pointer;
+    }
+
+    img{
+        height: 60%;
+        width: 30px;
+
+        margin-left: 2em;
+        margin-bottom: 1.3em;
+    }
+}
+
+.informacoes-cad{
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 7em;
+}
+
+.titulo-cadastro{
+    h1{
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 1.5em;
+
+        padding-bottom: 3px;
+        border-bottom: 3px solid #241711;
+        
+        width: 9em;
+        margin-top: 2.5em;
+    }
+}
+
+.divisao-form{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2em;
+}
+
+.formulario-cad{
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            font-family: "Montserrat";
+            font-size: 1em;
+
+            outline: none;
+            border: #d9d9d9 solid 1px;
+
+            padding: 8px;
+
+            margin-bottom: 1.5em;
+        }
+
+        select{
+            font-family: "Montserrat";
+            font-size: 1em;
+
+            outline: none;
+            border: #d9d9d9 solid 1px;
+
+            padding: 8px;
+
+            margin-bottom: 1.5em;
+        }
+    }    
+}
+
+.image-upload {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 12em;
+}
+
+.image-upload img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.image-upload input[type="file"] {
+    display: none;
+}
+
+.Descricao{
+
+    margin-bottom: 1em;
+    textarea{
+        width: 96%;   
+        height: 100px;
+        resize: none; 
+        overflow: auto;
+        padding: 10px;
+        border: 1px solid #d9d9d9; 
+        font-family: "Montserrat";
+        font-size: 1em;
+        outline: none;
+    }
+}
+
+.botao-cadastro {
+    margin-top: 1em;
+
+}
+
+.botao-cadastro button{
+    padding: 1em;
+    font-family: "Montserrat";   font-size: 1em;
+    border: none;
+    background-color: #241711;
+    color: #fff;
+    width: 100%; 
+    max-width: 200px; 
+}
+
+.botao-cadastro button:hover {
+    transform: scale(1.1);
+}
+
+

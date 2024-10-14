@@ -6,47 +6,89 @@
 <meta charset="UTF-8">
 <title>Pagina ADM</title>
 <link rel='stylesheet' type='text/css' media='screen' href='Vendas.css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <div class="contener">
+<main>
 
-        <div class="info">
+	<article>
+		<section class="parede-cabecalho">
+				<div class="logo">
+					<img src="${pageContext.request.contextPath}/img/logo.png"
+						alt="Logo">
+				</div>
 
-            <p>Relatorios de Vendas</p>
+				<div class="bloco-opcoes">
 
-            <p>Data inicial</p>
+					<div class="row">
+						<img
+							src="${pageContext.request.contextPath}/img/adm/pagina-inicial 1.png"
+							alt="Home">
+						<h2>
+							<a href="${pageContext.request.contextPath}/views/adm/home/Home.jsp">Home</a>
+						</h2>
+					</div>
 
-            <p>Data final</p>
+					<div class="row">
+						<img
+							src="${pageContext.request.contextPath}/img/adm/melhor-produto 1.png"
+							alt="Cadastrar">
+						<h2>
+							<a href="${pageContext.request.contextPath}/views/adm/cadastro_produto/cadastroProd.jsp">Cadastrar Produto</a>
+						</h2>
+					</div>
 
-            <p>Pesquisar</p>
+					 <div class="row">	
+                        <img src="${pageContext.request.contextPath}/img/adm/home/caracteristicas (1).png" alt="Listar">
+                        <h2><a href="${pageContext.request.contextPath}/views/adm/listaProdutos/listaProdutos.jsp">Listar Produtos</a></h2>
+                    </div>
+				</div>
+
+				<div class="row-exit">
+					<img src="${pageContext.request.contextPath}/img/adm/home/sair (1) 1.png"
+						alt="Sair">
+					<h2>
+						<a href="${pageContext.request.contextPath}/views/adm/login/LoginAdm.jsp">Sair</a>
+					</h2>
+				</div>
+			</section>
+			<section class="container">
+				   <div class="info">
+
+            <div class="titulo">
+
+                <p>Relatorios de Vendas</p>
+
+                <div id="underline">
+
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/esgcc-basic-icon-library/date-71.png" />
+                </div>
+
+                <input type="date" placeholder="Data Inicial">
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/esgcc-basic-icon-library/date-71.png" />
+                </div>
+
+                <input type="date" placeholder="Data Final">
+            </div>
+
+            <input id="pes" type="button" value="Pesquisar">
 
         </div>
+			</section>
+	</article>
 
-        <div class="menu">
-
-            <div class="img">
-
-                <img alt="" src="">
-
-            </div>
-
-            <div class="texto">
-
-                <p>Home</p>
-
-                <p>Cadastro de Produto</p>
-
-                <p>Lista de Produtos</p>
-
-                <p>Relatório de Vendas</p>
-
-            </div>
-
-            <div class="sai">
-                <p>Sair</p>
-            </div>
-        </div>
-
-    </div>
-</body>
+</main>
+    </body>
 </html>

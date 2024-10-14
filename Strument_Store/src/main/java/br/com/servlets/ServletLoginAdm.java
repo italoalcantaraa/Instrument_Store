@@ -26,7 +26,7 @@ public class ServletLoginAdm extends HttpServlet {
 			String senha = request.getParameter("senha");
 			
 			if(nome.equals("italo") &&  senha.equals("1234")) {
-				response.sendRedirect("../Strument_Store/views/home/Home.jsp");
+				response.sendRedirect("../Strument_Store/views/adm/home/Home.jsp");
 				}	
 			else {
 					request.setAttribute("erro", "*Login ou senha inválidos*");

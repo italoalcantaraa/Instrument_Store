@@ -1,5 +1,5 @@
-<%@page import="br.com.teste.Produtos"%>
-<%@page import="br.com.teste.ProdutosList"%>
+<%@page import="br.com.model.Produtos"%>
+<%@page import="br.com.model.ProdutosList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

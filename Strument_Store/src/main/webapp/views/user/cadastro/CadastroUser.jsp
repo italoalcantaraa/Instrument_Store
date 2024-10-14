@@ -5,16 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/user/cadastro/CadastroUser.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/user/cadastro/CadastroUserStyle.css">
 </head>
 <body>
 
     <div class="container">
         <div class="cabec_container">
             <img src="${pageContext.request.contextPath}/img/logo.png" alt="">
-            <h1>Cadastro</h1>
+            <p id="cadastro_titulo">Cadastro</p>
         </div>
-        <form action="${pageContext.request.contextPath}/CadastroServlet" method="post" class="conteudo">
+        <form action="${pageContext.request.contextPath}/CadastroUserServlet" method="post" class="conteudo">
         	<div>
                 <p>Nome</p>
                 <input type="text" placeholder="Informe o nome" name="nome" id="">

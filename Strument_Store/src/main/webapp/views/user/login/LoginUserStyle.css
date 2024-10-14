@@ -8,15 +8,15 @@
 body{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding-top: 70px; 
 }
 .container_login {
-    		
-    margin-top: 20px;
     width: 60%;
     box-shadow: 1px 3px 7px 1px rgba(55, 55, 55, 0.489);
     padding: 10px 0px 105px 0px;
     border-radius: 3px;
-    
+    margin: 0 auto;
     img{
     	width: 270px;
     }

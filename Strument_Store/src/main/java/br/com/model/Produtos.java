@@ -1,4 +1,4 @@
-package br.com.teste;
+package br.com.model;
 
 public class Produtos {
 	private String img;
