@@ -12,18 +12,20 @@
 <body>
 	
 	<jsp:include page="../../includes/Header.jsp"/>
-	<h1>Home</h1>
-	<p>opa</p>
-	<p>opa2</p>
-	<p>opa2</p>
-	<p>opa2</p>
-	<div class="produtos">
+	
+	<div style="width: 100%" class="image">
+	    <img style="width: 100%" alt="sla" src="../../img/violao.jpg">
+	</div>
+	
+    
+	<div class="produtos">	
 		<% 
-			ProdutosList.produtosList.add(new Produtos("https://cdn3.iconfinder.com/data/icons/solid-locations-icon-set/64/Music_Band_2-256.png", "Guitarra Cassio Red Elétrica", 500));
+			ProdutosList.produtosList.add(new Produtos("../../img/produtos/guitarra-vermelha.png", "Guitarra Cassio Red Elétrica Muito Boa", 500));
 		if(!ProdutosList.produtosList.isEmpty()) {
 			for(Produtos p : ProdutosList.produtosList) {
+				out.print("	<a class=\"container_prod\" href=\"../Produto/Produto.jsp\">");
 				out.print("<div class=\"produto\">");
-				
+					
 				out.print("<div class=\"img_produto\">");
 					out.print("<img src=\""+p.getImg()+"\"/>");
 				out.print("</div>");
@@ -38,6 +40,8 @@
 					out.print("</form>");
 					
 				out.print("</div>");
+
+				out.print("</a>");
 			}
 		}else {
 			out.print("<div class=\"sem_produtos\"><p>Não há produtos.</p></div>");

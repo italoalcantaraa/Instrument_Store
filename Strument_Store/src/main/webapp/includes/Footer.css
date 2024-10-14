@@ -4,20 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family:'font';
-    src: url("../fonts/MontserratAlternates-Regular.ttf");
+    
+    
 }
 
 footer {
     background-color: #241711;
     color: white;
     padding: 60px;
-    font-family: 'font';
     width: 100%;
     margin-top: 120px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .informacoes {

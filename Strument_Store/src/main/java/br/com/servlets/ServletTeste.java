@@ -1,4 +1,4 @@
-package br.com.servlets.testes;
+package br.com.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

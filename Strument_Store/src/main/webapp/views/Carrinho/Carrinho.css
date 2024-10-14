@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_carrinho {
+    margin: 0 auto;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    padding: 50px 0px 0px 0px;
+}
+
+.container_carrinho .cabecalho_carrinho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_carrinho .cabecalho_carrinho div:nth-child(1) {
+    font-size: 35px;
+    font-weight: bolder;
+    display: flex;
+    gap: 10px;
+}
+
+.container_carrinho .cabecalho_carrinho a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #F0D085;
+    font-size: 20px;
+}
+
+#linha {
+    height: 45px;
+    width: 6px;
+    border-radius: 2px;
+    background-color: #F0D085;
+}
+
+.conteudo_carrinho {
+    padding-top: 90px;
+}
+
+.conteudo_carrinho .linha_preco {
+    text-align: end;
+    font-size: 26px;
+	
+    div {
+        height: 2px;
+        width: 100%;
+        background-color: #D9D9D9;
+    }
+    
+    p{
+    	padding-bottom: 4px;
+    }
+}
+
+
+.container_carrinho .produto {
+    display: flex;
+    padding: 30px 0px 30px 0px;
+
+    img {
+        width: 120px;
+    }
+}
+
+.container_carrinho .produto .informacoes {
+    padding-left: 70px;
+    width: 100%;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container_carrinho .produto .informacoes p:nth-child(1) {
+    max-width: 70%;
+}
+
+.container_carrinho .produto .informacoes {
+    #estoque {
+        padding-top: 20px;
+        color: rgb(0, 187, 0);
+        font-size: 20px;
+    }
+
+    #frete {
+        font-size: 20px;
+    }
+}
+
+.container_carrinho .produto .informacoes>div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+
+#qtd {
+    font-size: 20px;
+    padding: 7px;
+    background-color: #E8E8E8;
+    border-radius: 5px;
+    border: 1px solid #7c7c7c99;
+    text-align: center;
+}
+
+#excluir {
+    font-size: 20px;
+    color: #F0D085;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#excluir:hover{
+    color: #8b0000;
+    transition: 0.5s;
+}
+
+#preco {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: end;
+    width: 20%;
+}
+
+#linha-horizont{
+        height: 1.4px;
+        width: 100%;
+        background-color: #D9D9D9;
+}

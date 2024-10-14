@@ -19,4 +19,34 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CadastroServlet</display-name>
+    <servlet-name>CadastroServlet</servlet-name>
+    <servlet-class>br.com.servlets.cadastro.CadastroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CadastroServlet</servlet-name>
+    <url-pattern>/CadastroServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletLoginAdm</display-name>
+    <servlet-name>ServletLoginAdm</servlet-name>
+    <servlet-class>br.com.servlets.ServletLoginAdm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletLoginAdm</servlet-name>
+    <url-pattern>/ServletLoginAdm</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletLoginUser</display-name>
+    <servlet-name>ServletLoginUser</servlet-name>
+    <servlet-class>br.com.servlets.ServletLoginUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletLoginUser</servlet-name>
+    <url-pattern>/ServletLoginUser</url-pattern>
+  </servlet-mapping>
 </web-app>

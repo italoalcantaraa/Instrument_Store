@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.container_login {
+    		
+    margin-top: 20px;
+    width: 60%;
+    box-shadow: 1px 3px 7px 1px rgba(55, 55, 55, 0.489);
+    padding: 10px 0px 105px 0px;
+    border-radius: 3px;
+    
+    img{
+    	width: 270px;
+    }
+}
+
+.container_login .cabecalho_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+
+    p {
+        font-size: 68px;
+        color: #241711ba;
+        text-shadow: 5px 2px 3px #24171153;
+    }
+}
+
+.container_login .conteudo {
+    margin: 0 auto;
+    width: 90%;
+    background-color: #6e68655e;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 0px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 7px 1px rgba(55, 55, 55, 0.489)
+}
+
+.container_login .email_senha,
+.entrar_cadastrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.container_login .entrar_cadastrar{
+	gap: 5px !important;
+}
+.container_login .email_senha input {
+    background-color: #241711;
+    color: white;
+    outline: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 20px;
+    width: 50%;
+}
+
+.container_login .entrar_cadastrar input {
+    background-color: #241711c2;
+    color: white;
+    outline: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    width: 40%;
+    transition: 0.5s;
+}
+
+.container_login .entrar_cadastrar input:hover {
+    background-color: #F0D085;
+    transition: 0.5s;   
+}
+
+.container_login .entrar_cadastrar a{
+    color: #646464;
+    text-decoration: none;  
+}
+
+.container_login .entrar_cadastrar a:hover{
+    text-decoration: underline;
+    
+}
+
+#erro{
+	font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    margin-bottom: -15px;
+}

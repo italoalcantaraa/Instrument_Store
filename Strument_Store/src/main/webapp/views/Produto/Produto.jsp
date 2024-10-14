@@ -5,17 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
-<link rel="stylesheet" type="text/css" href="Produto.css">
+<link rel="stylesheet" type="text/css" href="ProdutoStyle.css">
 </head>
 <body>
 	
 	<jsp:include page="../../includes/Header.jsp"/>
+	
 	<div id="Page">
 	<nav>
+		<div class="inicio_i"></div>
 		<div class="inicio">
 			<div class="barra"></div>
-			<img src="../../img/Yamaha logo.svg">
-			<h2 id="d">></h2>
+			<img src="../../img/marcas/yamaha.png">
+			<img id="seta" alt="" src="../../img/right-arrow-svgrepo-com.png">
 			<h1>Guitarra Cassio Red Elétrica</h1>
 		</div>
 		<div class="inicio_i"></div>
@@ -23,7 +25,7 @@
 	
 	<section>
 		<figure>
-			<img alt="" src="../../img/Guitarra.svg">
+			<img alt="" src="../../img/produtos/guitarra-vermelha.png">
 		</figure>
 	
 		<div class="info">
@@ -31,7 +33,7 @@
 			
 			<div class="infoDin">
 				<h2>R$ 560,00</h2>
-				<img alt="" src="../../img/contorno-em-forma-de-coracao 26.svg">
+				<img alt="" src="../../img/product/contorno-em-forma-de-coracao 26.svg">
 			</div>
 			
 			<div class="o">
@@ -51,7 +53,6 @@
 	<article>
 		
 		<div class="desc">
-			<hr id="brown">
 			<hr>
 			<div class="desc-box">
 				<h5>Descrição</h5>	

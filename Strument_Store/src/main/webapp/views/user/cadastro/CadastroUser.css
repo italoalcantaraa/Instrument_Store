@@ -1,0 +1,134 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    padding: 30px;
+	    margin: 0 auto;
+	    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .cabec_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+        width: 270px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+}
+
+
+.container .cabec_container > h1{
+	font-size: 35px;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    background-color: #6e68655a;
+    border-radius: 20px;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.conteudo>div {
+    width: 80%;
+    margin: 0 auto;
+
+    p {
+        padding-bottom: 10px;
+        font-weight: bold;
+        color: #646464;
+        font-size: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: #241711;
+        outline: none;
+        color: white;	
+        font-size: 20px;
+    }
+}
+
+.cpf_tel,
+.senha_confir {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cidade_estado {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.cidade_estado div:nth-child(1) {
+    width: 47.2%;
+}
+
+.cidade_estado select {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    background-color: #241711;
+    color: #646464;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+select option {
+    background-color: white;
+}
+
+#cadastrar {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 13px;
+    color: white;
+    font-weight: bold;
+    background-color: #241711be;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#cadastrar:hover {
+    transition: 0.3s;
+    background-color: #F0D085;
+}
+
+
+#erro{
+	font-size: 12px;
+	color: red;
+	padding-top: 3px;
+}
+
+
+#login{
+	margin: 0 auto;
+	text-decoration: underline;
+	color: #646464;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#login:hover {
+	transition: 0.5s;
+	color: black;
+}
