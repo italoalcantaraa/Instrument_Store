@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/views/adm/listaProdutos/listaProdutosStyle.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/views/adm/listaProdutos/listaProdutos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -67,62 +67,51 @@
 
 			</section>
 
+	<div class="container_pedidos">
+						<div class="titulo">
+		
+						<p>Produtos</p>
 
-            <section class="informacoes-cad">
-
-                <div class="titulo-cadastro">
-                    <h1>Lista de Produtos</h1>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Produto</th>
-                                <th>Preço</th>
-                                <th>Marca</th>
-                                <th>Categoria</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>10</td>
-                                <td>Guitarra Pacifica</td>
-                                <td>R$ 100,00</td>
-                                <td>Yamaha</td>
-                                <td>Guitarra</td>
-                                <td id="acoes"> 
-                                    <img src="${pageContext.request.contextPath}/img/adm/ferramenta-lapis 1.svg" alt="alterar">
-                                    <img src="${pageContext.request.contextPath}/img/adm/lixeira 1.svg" alt="excluir">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>Guitarra Pacifica</td>
-                                <td>R$ 100,00</td>
-                                <td>Yamaha</td>
-                                <td>Guitarra</td>
-                                <td id="acoes"> 
-                                    <img src="${pageContext.request.contextPath}/img/adm/ferramenta-lapis 1.svg" alt="alterar">
-                                    <img src="${pageContext.request.contextPath}/img/adm/lixeira 1.svg" alt="excluir">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>Guitarra Pacifica</td>
-                                <td>R$ 100,00</td>
-                                <td>Yamaha</td>
-                                <td>Guitarra</td>
-                                <td id="acoes"> 
-                                    <img src="${pageContext.request.contextPath}/img/adm/ferramenta-lapis 1.svg" alt="alterar">
-                                    <img src="${pageContext.request.contextPath}/img/adm/lixeira 1.svg" alt="excluir">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                
-                </div>
-            </section>
+						<div id="underline"></div>
+					</div>
+	
+        <div class="buscar">
+            <input type="text" name="" id="" placeholder="Buscar produtos">
+            <input type="submit" name="" id="" value="Buscar">
+        </div>
+        <div class="cabecalho_pedidos">
+            <p>ID</p>
+            <p>Produto</p>
+            <p>Preço</p>
+            <p>Marca</p>
+            <p>Categoria</p>
+            <p>Ações</p>
+        </div>
+        <div class="produto">
+            <p>01</p>
+            <p>Violão</p>
+            <p>450,00</p>
+            <p>Yamaha</p>
+            <p>Corda</p>
+            <div>
+                <img src="${pageContext.request.contextPath}/img/adm/lixeira 1.svg" alt="">
+                <img src="${pageContext.request.contextPath}/img/adm/ferramenta-lapis 1.svg" alt="">
+            </div>
+            
+        </div>
+        <div class="produto">
+            <p>01</p>
+            <p>Violão</p>
+            <p>450,00</p>
+            <p>Yamaha</p>
+            <p>Corda</p>
+            <div>
+                <img src="${pageContext.request.contextPath}/img/adm/lixeira 1.svg" alt="">
+                <img src="${pageContext.request.contextPath}/img/adm/ferramenta-lapis 1.svg" alt="">
+            </div>
+            
+        </div>
+    </div>
         </article>
     </main>
 </body>
