@@ -19,34 +19,7 @@
 	
     
 	<div class="produtos">	
-		<%
-			ProdutosList.produtosList.add(new Produto("../../img/produtos/guitarra-vermelha.png", "Guitarra Cassio Red Elétrica Muito Boa", 500));
-					if(!ProdutosList.produtosList.isEmpty()) {
-				for(Produto p : ProdutosList.produtosList) {
-					out.print("	<a class=\"container_prod\" href=\"../Produto/Produto.jsp\">");
-					out.print("<div class=\"produto\">");
-						
-					out.print("<div class=\"img_produto\">");
-						out.print("<img src=\""+p.getImg()+"\"/>");
-					out.print("</div>");
-					
-					out.print("<p id=\"desc\">"+p.getDescricao()+"</p>");
-						out.print("<div class=\"preco_produto\">");
-							out.print("<p>R$ "+p.getPreco()+"</p>");
-							out.print("<img src=\"https://cdn-icons-png.flaticon.com/512/1077/1077035.png\"/>");
-						out.print("</div>");
-						out.print("<form action=\"\" method=\"post\">");
-						out.print("<input type=\"submit\" value=\"Adicionar ao Carrinho\">");
-						out.print("</form>");
-						
-					out.print("</div>");
-
-					out.print("</a>");
-				}
-					}else {
-				out.print("<div class=\"sem_produtos\"><p>Não há produtos.</p></div>");
-					}
-			%>
+		
 	</div>
 	<jsp:include page="../../includes/Footer.jsp" />
 </body>
