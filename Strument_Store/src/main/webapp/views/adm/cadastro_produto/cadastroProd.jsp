@@ -75,7 +75,7 @@
 				<div class="divisao-form">
 
 					<div class="formulario-cad">
-						<form action="${pageContext.request.contextPath}/ProdutoServlet"
+						<form action="${pageContext.request.contextPath}/produto/inserir"
 							method="get">
 
 							<input type="text" id="nome" name="nome" placeholder="Nome"
