@@ -13,6 +13,7 @@
 	<title>Home</title>
 </head>
 <body>
+	<p>TEste</p>
 	
     <main>
         <article>
