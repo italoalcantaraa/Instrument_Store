@@ -11,7 +11,6 @@
 <link rel="stylesheet" type="text/css" href="StyleHome.css">
 </head>
 <body>
-
 	<jsp:include page="../../includes/Header.jsp" />
 
 	<div style="width: 100%" class="image">
