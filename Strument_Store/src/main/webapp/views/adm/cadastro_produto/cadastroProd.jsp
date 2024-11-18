@@ -95,6 +95,12 @@
 								<option value="Sopro">Sopro</option>
 								<option value="Teclado">Teclado</option>
 							</select>
+											
+								
+							<select name="img" >  
+								<option value="">Imagem</option>
+								<option value="guitarra-vermelha.png">Guitarra Vermelha</option>
+							</select>
 
 							<div class="Descricao">
 								<textarea name="descricao" id="descricao"
@@ -114,12 +120,7 @@
 						</form>
 					</div>
 
-					<div class="image-upload">
-						<label for="file-input"> <img
-							src="${pageContext.request.contextPath}/img/adm/cadastro_produto/imagem 1.png"
-							alt="Icone de upload" />
-						</label> <input id="file-input" type="file" />
-					</div>
+					
 
 				</div>
 			</section>

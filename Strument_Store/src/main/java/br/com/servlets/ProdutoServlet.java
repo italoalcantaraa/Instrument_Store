@@ -1,5 +1,6 @@
 package br.com.servlets;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -8,12 +9,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.util.List;
 
 import br.com.dao.ProdutoDAO;
 import br.com.model.Produto;
 
 
-@WebServlet (name="produto", urlPatterns = {"/produto", "/produto/inserir", "/produto/alterar" ,"/produto/listar",
+@WebServlet (name="produto", urlPatterns = {"/produto", "/produto/inserir", "/produto/alterar" ,"/views/home/listar",
 "/produto/remover"})
 public class ProdutoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -36,19 +38,27 @@ public class ProdutoServlet extends HttpServlet {
 			case "/produto/alterar":
 				// método para alterar
 				break;
-			case "/produto/listar":
-				// método para listar
+			case "/views/home/listar":
+				listar(request, response);
 				break;
 			case "produto/remover":
 				// método para remover
 				break;
 			default:
-				// método de listar como padrão
+				listar(request, response);
 				break;
 			}
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	
+	public static void listar(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, SQLException, ServletException, IOException {
+		List<Produto> produtoList = produtoDAO.listar();
+		request.setAttribute("produtoList", produtoList);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/views/home/Home.jsp");
+		dispatcher.forward(request, response);
 	}
 
 	public static void inserir(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException  {
@@ -61,6 +71,8 @@ public class ProdutoServlet extends HttpServlet {
 		String strPreco = request.getParameter("preco");
 		String descricao = request.getParameter("descricao");
 		String categoria = request.getParameter("instrumento");
+		String img = request.getParameter("img");
+		
 		int quantidade = 0;
 		double preco = 0;
 		
@@ -99,9 +111,10 @@ public class ProdutoServlet extends HttpServlet {
 			produto.setQtd_estoque(quantidade);
 			produto.setVl_preco(preco);
 			produto.setDs_descricao(descricao);
-			produto.setFk_marca(1);
-			produto.setFk_fornecedor(1);
-			produto.setFk_categoria(1);
+			produto.setDs_img(img);
+			produto.setFk_marca(3);
+			produto.setFk_fornecedor(6);
+			produto.setFk_categoria(3);
 		}
 			
 
