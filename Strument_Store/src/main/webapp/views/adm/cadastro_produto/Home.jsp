@@ -41,7 +41,7 @@
 
 					 <div class="row">
                         <img src="${pageContext.request.contextPath}/img/adm/home/caracteristicas (1).png"	>
-                        <h2><a href="${pageContext.request.contextPath}/views/adm/listaProdutos/listaProdutos.jsp">Listar Produtos</a></h2>
+                        <h2><a href="/views/adm/listaProdutos">Listar Produtos</a></h2>
                     </div>
                     
                     <div class="row">	

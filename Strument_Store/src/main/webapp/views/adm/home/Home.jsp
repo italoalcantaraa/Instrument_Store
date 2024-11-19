@@ -12,12 +12,10 @@
     <link rel="icon" href="../image/Logo.png" type="image/x-icon">
 	<title>Home</title>
 </head>
-<body>
-	<p>TEste</p>
-	
+<body>	
     <main>
         <article>
-            <section class="parede-cabecalho">
+            <section class="parede-cabecalho">	
 				<div class="logo">
 					<img src="${pageContext.request.contextPath}/img/logo.png">
 				</div>
@@ -42,7 +40,7 @@
 
 					 <div class="row">
                         <img src="${pageContext.request.contextPath}/img/adm/home/caracteristicas (1).png"	>
-                        <h2><a href="${pageContext.request.contextPath}/views/adm/listaProdutos/listaProdutos.jsp">Listar Produtos</a></h2>
+                        <h2><a href="/Strument_Store/views/adm/listaProdutos">Listar Produtos</a></h2>
                     </div>
                     
                     <div class="row">	

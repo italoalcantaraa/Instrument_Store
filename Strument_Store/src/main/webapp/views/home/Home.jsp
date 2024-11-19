@@ -8,13 +8,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
-<link rel="stylesheet" type="text/css" href="StyleHome.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/home/StyleHome.css">
 </head>
 <body>
 	<jsp:include page="../../includes/Header.jsp" />
 
 	<div style="width: 100%" class="image">
-		<img style="width: 100%" alt="sla" src="../../img/violao.jpg">
+		<img style="width: 100%" alt="sla" src="${pageContext.request.contextPath}/img/violao.jpg">
 	</div>
 
 <div class="produtos">
@@ -22,12 +22,12 @@
 			<div class="container_prod">
 				<div class="produto">
 					<div class="img_produto">
-						<img alt=".sfeef" src="../../img/produtos/${produto.ds_img}"/>
+						<img alt="erro" src="${pageContext.request.contextPath}/img/produtos/${produto.ds_img}"/>
 					</div>
 					<p>${produto.ds_descricao}</p>
 					<div class="preco_produto">
 						<p>R$ ${produto.vl_preco}</p>
-						<img src="../../img/coracao.png" />
+						<img src="${pageContext.request.contextPath}/img/coracao.png" />
 					</div>
 					<form>
 						<input type="submit" value="Adicionar ao Carrinho">
@@ -40,9 +40,6 @@
 	<jsp:include page="../../includes/Footer.jsp" />
 </body>
 	<script type="text/javascript">
-		window.onload = () => {
-			window.location.href = "http://localhost:8080/Strument_Store/views/home/listar";
-		}
-		
+			//window.location.href = "http://localhost:8080/Strument_Store/views/home/listar";
 	</script>
 </html>
