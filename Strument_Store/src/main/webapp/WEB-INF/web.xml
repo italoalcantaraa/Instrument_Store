@@ -79,4 +79,14 @@
     <servlet-name>ServletPopUp</servlet-name>
     <url-pattern>/ServletPopUp</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Cliente</display-name>
+    <servlet-name>Cliente</servlet-name>
+    <servlet-class>br.com.model.Cliente</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cliente</servlet-name>
+    <url-pattern>/Cliente</url-pattern>
+  </servlet-mapping>
 </web-app>

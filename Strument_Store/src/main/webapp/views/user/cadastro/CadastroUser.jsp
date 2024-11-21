@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Cadastro Usuário</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/user/cadastro/CadastroUserStyle.css">
 </head>
 <body>
@@ -14,17 +14,17 @@
             <img src="${pageContext.request.contextPath}/img/logo.png" alt="">
             <p id="cadastro_titulo">Cadastro</p>
         </div>
-        <form action="${pageContext.request.contextPath}/CadastroUserServlet" method="post" class="conteudo">
+        <form action="${pageContext.request.contextPath}/cliente/inserir" method="get" class="conteudo">
         	<div>
                 <p>Nome</p>
-                <input type="text" placeholder="Informe o nome" name="nome" id="">
+                <input type="text" placeholder="Informe o nome" name="nome" id="nome" value = "${param.nome}">
                 <p id="erro"><% if(request.getAttribute("erroNome") != null) {
                 	out.print(request.getAttribute("erroNome"));		
                 } %></p>
             </div>
             <div>
                 <p>E-mail</p>
-                <input type="email" placeholder="Informe o seu e-mail" name="email" id="">
+                <input type="email" placeholder="Informe o seu e-mail" name="email" id="" value = "${param.email}">
                 <p id="erro"><% if(request.getAttribute("erroEmail") != null) {
                 	out.print(request.getAttribute("erroEmail"));		
                 } %></p>
@@ -33,7 +33,7 @@
                 <div>
                     <p>CPF</p>
                     <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                        title="Digite um CPF no formato: xxx.xxx.xxx-xx" placeholder="xxx.xxx.xxx-xx">
+                        title="Digite um CPF no formato: xxx.xxx.xxx-xx" placeholder="xxx.xxx.xxx-xx" value = "${param.cpf}">
                 	<p id="erro">
                 		<% 
                 		if(request.getAttribute("erroCpfNull") != null)
@@ -44,7 +44,7 @@
                 </div>
                 <div>
                     <p>Telefone</p>
-                    <input type="tel" name="telefone" id="" placeholder="Número de telefone">
+                    <input type="tel" name="telefone" id="" placeholder="Número de telefone" value = "${param.telefone}">
                     <p id="erro">
                 		<% 
                 		if(request.getAttribute("erroTelefoneNull") != null)
@@ -57,7 +57,7 @@
             <div class="senha_confir">
                 <div>
                     <p>Senha</p>
-                    <input type="password" placeholder="Informe a senha" name="senha" id="">
+                    <input type="password" placeholder="Informe a senha" name="senha" id="" value = "${param.senha}">
                      <p id="erro">
                 		<% 
                 		if(request.getAttribute("erroSenhaNull") != null)
@@ -80,7 +80,7 @@
             <div class="cidade_estado">
                 <div>
                     <p>Cidade</p>
-                    <input type="text" placeholder="Informe o estado" name="cidade" id="">
+                    <input type="text" placeholder="Informe o estado" name="cidade" id="" value = "${param.cidade}">
                     <p id="erro">
                 		<% 
                 		if(request.getAttribute("erroCidadeNull") != null)

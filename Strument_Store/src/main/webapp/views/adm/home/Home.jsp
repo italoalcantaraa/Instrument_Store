@@ -13,8 +13,7 @@
 	<title>Home</title>
 </head>
 <body>
-	<p>TEste</p>
-	
+
     <main>
         <article>
             <section class="parede-cabecalho">

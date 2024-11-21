@@ -14,7 +14,7 @@ public class ConnectionBd {
 			
 			String url = "jdbc:mysql://localhost/instrumentStore";
 			
-			con = DriverManager.getConnection(url, "root", "ita75802309");
+			con = DriverManager.getConnection(url, "root", "1234");
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
