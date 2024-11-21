@@ -6,6 +6,7 @@ package br.com.model;
     vl_preco decimal(10,5) not null,
     qtd_estoque int not null,
     ds_descricao varchar(250) not null,
+    ds_img varchar(200) not null,
     
     fk_marca int,
     fk_categoria int,
@@ -17,6 +18,7 @@ public class Produto {
 	private double vl_preco;
 	private int qtd_estoque;
 	private String ds_descricao;
+	private String ds_img;
 	private int fk_marca;
 	private int fk_categoria;
 	private int fk_fornecedor;
@@ -26,16 +28,26 @@ public class Produto {
 	public Produto() {
 	}
 	
-	public Produto(int cod_produto, String ds_nome, double vl_preco, int qtd_estoque, String ds_descricao,
+	public Produto(int cod_produto, String ds_nome, double vl_preco, int qtd_estoque, String ds_descricao, String ds_img,
 			int fk_marca, int fk_categoria, int fk_fornecedor) {
 		this.cod_produto = cod_produto;
 		this.ds_nome = ds_nome;
 		this.vl_preco = vl_preco;
 		this.qtd_estoque = qtd_estoque;
 		this.ds_descricao = ds_descricao;
-		this.fk_marca = fk_marca;
-		this.fk_categoria = fk_categoria;
-		this.fk_fornecedor = fk_fornecedor;
+		this.ds_img = ds_img;
+		this.fk_marca = 3;
+		this.fk_categoria = 3;
+		this.fk_fornecedor = 6;
+	}
+	
+	
+	public String getDs_img() {
+		return ds_img;
+	}
+	
+	public void setDs_img(String ds_img) {
+		this.ds_img = ds_img;
 	}
 	
 	public int getCod_produto() {

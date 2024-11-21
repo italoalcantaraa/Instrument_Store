@@ -51,7 +51,7 @@
 							alt="Listar">
 						<h2>
 							<a
-								href="${pageContext.request.contextPath}/views/adm/listaProdutos/listaProdutos.jsp">Listar
+								href="/Strument_Store/views/adm/listaProdutos">Listar
 								Produtos</a>
 						</h2>
 					</div>

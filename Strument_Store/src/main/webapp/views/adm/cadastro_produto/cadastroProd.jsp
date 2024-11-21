@@ -47,7 +47,7 @@
 
 					 <div class="row">
                         <img src="${pageContext.request.contextPath}/img/adm/home/caracteristicas (1).png" alt="Listar">
-                        <h2><a href="${pageContext.request.contextPath}/views/adm/listaProdutos/listaProdutos.jsp">Listar Produtos</a></h2>
+                        <h2><a href="/Strument_Store/views/adm/listaProdutos">Listar Produtos</a></h2>
                     </div>
                     
                     <div class="row">	
@@ -75,17 +75,19 @@
 				<div class="divisao-form">
 
 					<div class="formulario-cad">
-						<form action="${pageContext.request.contextPath}/produto/inserir"
+						<form action="${produto == null ? '/Strument_Store/produto/inserir' : '/Strument_Store/produto/alterar'}"
 							method="get">
+							
+							<input type="hidden" name="id" value="${produto.cod_produto}">
 
 							<input type="text" id="nome" name="nome" placeholder="Nome"
-								value="${param.nome}"> <input type="text" id="marca"
-								name="marca" placeholder="Marca" value="${param.marca}">
+								value="${produto.ds_nome}"> <input type="text" id="marca"
+								name="marca" placeholder="Marca" value="${produto.fk_marca}">
 
 							<input type="text" id="preco" name="preco" placeholder="Preco"
-								value="${param.preco}"> <input type="text"
+								value="${produto.vl_preco}"> <input type="text"
 								id="quantidade" name="quantidade" placeholder="Quantidade"
-								value="${param.quantidade}"> <select name="instrumento"
+								value="${produto.qtd_estoque}"> <select name="instrumento"
 								id="instrumento">
 
 								<option value="">Categoria</option>
@@ -95,10 +97,16 @@
 								<option value="Sopro">Sopro</option>
 								<option value="Teclado">Teclado</option>
 							</select>
+											
+								
+							<select name="img" >  
+								<option value="">Imagem</option>
+								<option value="guitarra-vermelha.png">Guitarra Vermelha</option>
+							</select>
 
 							<div class="Descricao">
 								<textarea name="descricao" id="descricao"
-									placeholder="Descrição">${param.descricao}</textarea>
+									placeholder="Descrição">${produto.ds_descricao}</textarea>
 							</div>
 
 							<div class="botao-cadastro">
@@ -114,12 +122,7 @@
 						</form>
 					</div>
 
-					<div class="image-upload">
-						<label for="file-input"> <img
-							src="${pageContext.request.contextPath}/img/adm/cadastro_produto/imagem 1.png"
-							alt="Icone de upload" />
-						</label> <input id="file-input" type="file" />
-					</div>
+					
 
 				</div>
 			</section>
