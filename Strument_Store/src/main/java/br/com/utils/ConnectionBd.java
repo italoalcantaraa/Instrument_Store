@@ -12,9 +12,9 @@ public class ConnectionBd {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			String url = "jdbc:mysql://localhost/instrumentStore";
+			String url = "jdbc:mysql://localhost/InstrumentStore";
 			
-			con = DriverManager.getConnection(url, "root", "1234");
+			con = DriverManager.getConnection(url, "root", "luis");
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
