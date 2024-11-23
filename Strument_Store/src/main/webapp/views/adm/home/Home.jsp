@@ -16,51 +16,8 @@
 <body>	
     <main>
         <article>
-            <section class="parede-cabecalho">	
-				<div class="logo">
-					<img src="${pageContext.request.contextPath}/img/logo.png">
-				</div>
-
-				<div class="bloco-opcoes">
-
-					<div class="row">
-						<img
-							src="${pageContext.request.contextPath}/img/adm/home/pagina-inicial 1.png">
-						<h2>
-							<a href="${pageContext.request.contextPath}/views/adm/home/Home.jsp">Home</a>
-						</h2>
-					</div>
-
-					<div class="row">
-						<img
-							src="${pageContext.request.contextPath}/img/adm/home/melhor-produto 1.png"/>
-						<h2>
-							<a href="${pageContext.request.contextPath}/views/adm/cadastro_produto/cadastroProd.jsp">Cadastrar Produto</a>
-						</h2>
-					</div>
-
-					 <div class="row">
-                        <img src="${pageContext.request.contextPath}/img/adm/home/caracteristicas (1).png"	>
-                        <h2><a href="/Strument_Store/views/adm/listaProdutos">Listar Produtos</a></h2>
-                    </div>
-                    
-                    <div class="row">	
-                        <img src="${pageContext.request.contextPath}/img/adm/venda.png" alt="Listar">
-                        <h2><a href="${pageContext.request.contextPath}/views/adm/relatorio_vendas/Vendas.jsp">Vendas</a></h2>
-                    </div>
-				</div>
-
-				<div class="row-exit">
-					<img src="${pageContext.request.contextPath}/img/adm/home/sair (1) 1.png">
-					<h2>
-						<a href="${pageContext.request.contextPath}/views/adm/login/LoginAdm.jsp">Sair</a>
-					</h2>
-				</div>
-
-			</section>
-
+            <jsp:include page="../../../includes/menu.jsp" />
         </article>
     </main>
-    
 </body>
 </html>
