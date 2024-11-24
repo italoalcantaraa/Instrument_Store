@@ -1,9 +1,25 @@
 package br.com.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Carrinho {
 	private int cod_carrinho;
 	private double total;
 	private int fk_cliente;
+	private List<ItemCarrinho> itens;
+	
+	
+	public Carrinho() {
+		itens = new ArrayList<ItemCarrinho>();
+	}
+	
+	public Carrinho(double total, int fk_cliente, List<ItemCarrinho> itens) {
+		this.total = total;
+		this.fk_cliente = fk_cliente;
+		this.itens = itens;
+	}
+	
 	
 	public int getCod_carrinho() {
 		return cod_carrinho;
