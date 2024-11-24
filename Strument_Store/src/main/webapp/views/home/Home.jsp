@@ -30,14 +30,13 @@
 						<p>R$ ${produto.vl_preco}</p>
 						<img src="${pageContext.request.contextPath}/img/coracao.png" />
 					</div>
-					<form action="/carrinho/inserir$id=${produto.cod_produto}" method="get">
+					<form action="/carrinho/inserir" method="get">
 						<input type="submit" value="Adicionar ao Carrinho">
 					</form>
 				</div>
 			</div>
 	</c:forEach>
 </div>
-
 	<jsp:include page="../../includes/Footer.jsp" />
 </body>
 	<script type="text/javascript">
