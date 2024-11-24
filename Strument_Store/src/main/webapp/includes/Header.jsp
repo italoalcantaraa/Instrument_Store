@@ -83,7 +83,7 @@
         </li>
 
         <li id="nav-quemS">
-            <a href="#">
+            <a href="../../views/quemSomos/quemSomos.jsp">
                 <p> Quem Somos? </p>
             </a>
         </li>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Finalizar compra</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/compra/compra.css">
 <link rel="icon" href="../../img/logoIcon.png" type="image/x-icon">
 </head>
@@ -43,7 +43,6 @@
            		<p>À vista ou no pix:</p>
            		<strong>R$ 484,99</strong>
            	</div>
-            
             </div>
             
             

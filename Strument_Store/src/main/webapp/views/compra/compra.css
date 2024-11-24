@@ -99,27 +99,13 @@ nav #linha{
     background-color: red;
 }
 
-.carrinho_produto{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 20px;
-}
-
-.carrinho_produto .informacoes_produto{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-size: 22px;
-}
-.carrinho_produto .informacoes_produto .botao_quantidade{
+.botao_quantidade{
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.carrinho_produto .informacoes_produto .botao_quantidade button{
+.botao_quantidade button{
     font-weight: bold;
     color: #F0D085;
     background-color: transparent;
@@ -138,46 +124,15 @@ nav #linha{
 }
 
 .produtos-carrinho img{
-	width: 10%;
+	width: 20%;
 }
 
 .produtos-carrinho h3{
 	width: 40%;
 }
 
-.botao_quantidade{
-	display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
 .carrinho_produto img{
     width: 130px;
-}
-.carrinho_produto .servicos{
-    padding: 10px;
-    background-color: #F0D085;
-    color: white;
-    border-radius: 10px;
-}
-
-.carrinho_produto .servicos > p:nth-child(2){
-    padding: 3px 0px 20px 0px;
-    font-weight: bold;
-}
-.carrinho_produto .servicos .opcoes{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
-
-.carrinho_produto .servicos .opcoes div{
-    display: flex;
-    gap: 10px;
-}
-
-.carrinho_produto .servicos > p:nth-child(4){
-    text-align: end;
 }
 
 .resumo{
