@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-.produtos-carrinho{
-	width: 20%;
-	background-color: red;
-}
-
 .estado{
     display: flex;
     justify-content: center;
@@ -126,7 +121,7 @@ nav #linha{
 
 .carrinho_produto .informacoes_produto .botao_quantidade button{
     font-weight: bold;
-    color: #125671;
+    color: #F0D085;
     background-color: transparent;
     border: none;
     font-size: 30px;
@@ -136,8 +131,24 @@ nav #linha{
 
 .produtos-carrinho{
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+.produtos-carrinho img{
+	width: 10%;
+}
+
+.produtos-carrinho h3{
+	width: 40%;
+}
+
+.botao_quantidade{
+	display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .carrinho_produto img{
@@ -145,7 +156,7 @@ nav #linha{
 }
 .carrinho_produto .servicos{
     padding: 10px;
-    background-color: #125671;
+    background-color: #F0D085;
     color: white;
     border-radius: 10px;
 }
@@ -208,7 +219,7 @@ nav #linha{
     padding: 15px 0px;
     border-radius: 5px;
     border: none;
-    background-color: #125671;
+    background-color: #F0D085;
     color: white;
     font-size: 18px;
     transition: 0.3;

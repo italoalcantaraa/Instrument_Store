@@ -9,6 +9,7 @@
 <meta charset="UTF-8">
 <title>Meus Pedidos</title>
 <link rel="stylesheet" type="text/css" href="StyleMeusPedidos.css">
+<link rel="icon" href="../../img/logoIcon.png" type="image/x-icon">
 </head>
 <body>
 	<div class="container_pedidos">

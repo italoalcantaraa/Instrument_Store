@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/compra/compra.css">
+<link rel="icon" href="../../img/logoIcon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -26,6 +27,23 @@
             </nav>
             <div class="produtos-carrinho">
             <img alt="" src="../../img/produtos/guitarra-vermelha.png">
+           	<h3>
+           	Guitarra Elétrica Queen's ST Vermelha – Inclui Kit com Palhetas, 
+           	Cabo P10 c/adaptador P10/P2 e Chaves Allen
+           	</h3>
+           	<div>
+           		<p>QTD</p>
+           		<div class="botao_quantidade">
+           			<button>-</button>
+           			<p>1</p>
+           			<button>+</button>
+           		</div>
+           	</div>
+           	<div>
+           		<p>À vista ou no pix:</p>
+           		<strong>R$ 484,99</strong>
+           	</div>
+            
             </div>
             
             

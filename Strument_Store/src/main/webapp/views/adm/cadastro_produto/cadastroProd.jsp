@@ -8,6 +8,7 @@
 
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/views/adm/cadastro_produto/cadastroProdAdm.css">
+	<link rel="icon" href="../../../img/logoIcon.png" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link

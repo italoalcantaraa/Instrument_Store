@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Carrinho</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/Carrinho/Carrinho.css">
+<link rel="icon" href="../../img/logoIcon.png" type="image/x-icon">
 </head>
 <body>
 	<jsp:include page="../../includes/Header.jsp"/>
