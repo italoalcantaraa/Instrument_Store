@@ -77,7 +77,7 @@
       <h4>Estamos Lisonjeados com sua compra</h4>
 
       <img class="animate__animated animate__backInRight" src="<%= request.getContextPath() %>/img/confirm-purchase-svgrepo-com.svg" alt="" />
-      <p>Seu pedido foi recebido e está sendo processado.</p>
+      <p>Seu pedido foi recebido e está sendo processado. </p>
 
       <div class="order-details">
         <strong>Número do pedido: </strong> #12345<br />
