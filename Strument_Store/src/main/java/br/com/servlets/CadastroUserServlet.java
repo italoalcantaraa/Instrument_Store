@@ -10,7 +10,6 @@ import java.io.IOException;
 import br.com.dao.ClienteDAO;
 import br.com.model.Cliente;
 
-
 public class CadastroUserServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
