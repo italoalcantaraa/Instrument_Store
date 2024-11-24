@@ -53,7 +53,6 @@
 								<option value="Sopro">Sopro</option>
 								<option value="Teclado">Teclado</option>
 							</select>
-											
 								
 							<select name="img" >  
 								<option value="">Imagem</option>
