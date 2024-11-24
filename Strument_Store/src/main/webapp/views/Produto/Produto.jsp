@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Home</title>
 <link rel="stylesheet" type="text/css" href="ProdutoStyle.css">
+<link rel="icon" href="../../img/logoIcon.png" type="image/x-icon">
 </head>
 <body>
 	
