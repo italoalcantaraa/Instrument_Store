@@ -6,10 +6,11 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 
 import br.com.dao.CarrinhoDAO;
 
-@WebServlet(name = "carrinho", urlPatterns = {"/carrinho","/carrinho/inserir", "/carrinho/novo"} )
+@WebServlet(name = "carrinho", urlPatterns = {"/carrinho","/Strument_Store/carrinho/inserir", "/carrinho/novo"} )
 public class CarrinhoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static CarrinhoDAO carrinhoDAO = null;
@@ -24,10 +25,10 @@ public class CarrinhoServlet extends HttpServlet {
 		
 		try {
 			switch (action) {
-			case "/carrinho/inserir":
-				// método de inserir produto no carrinho
+			case "/Strument_Store/carrinho/inserir":
+				inserir(request, response);
 				break;
-			case "/carrinho/novo":
+			case "/carrinho/remover":
 				// método de criar um novo carrinho
 				break;
 			default:
@@ -38,6 +39,15 @@ public class CarrinhoServlet extends HttpServlet {
 		}
 	}
 
+	public void inserir(HttpServletRequest request, HttpServletResponse response) throws ClassNotFoundException, SQLException {
+		int idProduto = Integer.parseInt(request.getParameter("idProduto"));
+		String cpf = request.getParameter("cpf");
+		
+		int numeroCarrinho = carrinhoDAO.salvar(idProduto, 1, cpf);
+		
+		System.out.println("Deu certo!");
+	}
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}

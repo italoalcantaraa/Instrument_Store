@@ -27,7 +27,6 @@
 				<div class="titulo-cadastro">
 					<h1>Cadastro Produto</h1>
 				</div>
-
 				<div class="divisao-form">
 
 					<div class="formulario-cad">
@@ -53,7 +52,6 @@
 								<option value="Sopro">Sopro</option>
 								<option value="Teclado">Teclado</option>
 							</select>
-											
 								
 							<select name="img" >  
 								<option value="">Imagem</option>

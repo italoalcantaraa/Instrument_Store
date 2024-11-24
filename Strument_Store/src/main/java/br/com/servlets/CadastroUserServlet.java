@@ -10,7 +10,6 @@ import java.io.IOException;
 import br.com.dao.ClienteDAO;
 import br.com.model.Cliente;
 
-@WebServlet(name="cliente", urlPatterns = {"/cliente", "/cliente/inserir"})
 
 public class CadastroUserServlet extends HttpServlet {
 	
