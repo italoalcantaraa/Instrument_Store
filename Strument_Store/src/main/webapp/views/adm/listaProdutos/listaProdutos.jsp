@@ -50,8 +50,8 @@
 						<p>${produto.cod_produto}</p>
 						<p>${produto.ds_nome}</p>
 						<p>${produto.vl_preco}</p>
-						<p>${produto.fk_marca}</p>
-						<p>${produto.fk_categoria}</p>
+						<p>${produto.ds_marca}</p>
+						<p>${produto.ds_categoria}</p>
 
 						<div>
 							<a href="/Strument_Store/views/adm/remover?id=${produto.cod_produto}"> <img

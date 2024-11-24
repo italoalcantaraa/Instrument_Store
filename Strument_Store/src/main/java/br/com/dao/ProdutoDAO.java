@@ -65,11 +65,10 @@ public class ProdutoDAO {
 				int quantidade = rs.getInt("qtd_estoque");
 				String descricao = rs.getString("ds_descricao");
 				String img = rs.getString("ds_img");
-				int marca = rs.getInt("fk_marca");
-				int categoria = rs.getInt("fk_categoria");
-				int fornecedor = rs.getInt("fk_fornecedor");
+				String marca = rs.getString("ds_marca");
+				String categoria = rs.getString("ds_categoria");
 
-				objRetorno = new Produto(idProduto, nome, preco, quantidade, descricao, img, marca, categoria, fornecedor);
+				objRetorno = new Produto(idProduto, nome, preco, quantidade, descricao, img, marca, categoria);
 			}
 
 		} catch (Exception e) {
@@ -105,7 +104,7 @@ public static boolean excluir(int idProduto) throws ClassNotFoundException, SQLE
 
 public static boolean inserir(Produto produto) throws ClassNotFoundException {
 
-	String sql = "insert into produto(ds_nome, vl_preco, qtd_estoque, ds_descricao, ds_img, fk_marca, fk_categoria, fk_fornecedor) values (?, ?, ?, ?, ?, ?, ?, ?);";
+	String sql = "insert into produto(ds_nome, vl_preco, qtd_estoque, ds_descricao, ds_img, ds_marca, ds_categoria) values (?, ?, ?, ?, ?, ?, ?);";
 
 	try (
 			Connection con = ConnectionBd.getConnection();
@@ -117,9 +116,8 @@ public static boolean inserir(Produto produto) throws ClassNotFoundException {
 		pstm.setInt(3, produto.getQtd_estoque());
 		pstm.setString(4, produto.getDs_descricao());
 		pstm.setString(5, produto.getDs_img());
-		pstm.setInt(6, produto.getFk_marca());
-		pstm.setInt(7, produto.getFk_categoria());
-		pstm.setInt(8, produto.getFk_fornecedor());
+		pstm.setString(6, produto.getDs_marca());
+		pstm.setString(7, produto.getDs_categoria());
 
 		int linhasAfetadas = pstm.executeUpdate();
 
@@ -149,11 +147,10 @@ public static List<Produto> listar() throws ClassNotFoundException, SQLException
 			int estoque = rs.getInt("qtd_estoque");
 			String descricao = rs.getString("ds_descricao");
 			String ds_img = rs.getString("ds_img");
-			int fk_marca = rs.getInt("fk_marca");
-			int fk_categoria = rs.getInt("fk_categoria");
-			int fk_fornecedor = rs.getInt("fk_fornecedor");
+			String ds_marca = rs.getString("ds_marca");
+			String ds_categoria = rs.getString("ds_categoria");
 
-			produtoList.add(new Produto(id, nome, preco, estoque, descricao, ds_img, fk_marca, fk_categoria, fk_fornecedor));
+			produtoList.add(new Produto(id, nome, preco, estoque, descricao, ds_img, ds_marca, ds_categoria));
 		};
 
 	}catch (Exception e) {

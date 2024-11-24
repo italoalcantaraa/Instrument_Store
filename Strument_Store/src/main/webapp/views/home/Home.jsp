@@ -29,7 +29,7 @@
 						<p>R$ ${produto.vl_preco}</p>
 						<img src="${pageContext.request.contextPath}/img/coracao.png" />
 					</div>
-					<form>
+					<form action="/carrinho/inserir$id=${produto.cod_produto}" method="get">
 						<input type="submit" value="Adicionar ao Carrinho">
 					</form>
 				</div>

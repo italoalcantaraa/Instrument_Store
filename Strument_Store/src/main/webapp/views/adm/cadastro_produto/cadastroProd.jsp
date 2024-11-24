@@ -37,7 +37,7 @@
 
 							<input type="text" id="nome" name="nome" placeholder="Nome"
 								value="${produto.ds_nome}"> <input type="text" id="marca"
-								name="marca" placeholder="Marca" value="${produto.fk_marca}">
+								name="marca" placeholder="Marca" value="${produto.ds_marca}">
 
 							<input type="text" id="preco" name="preco" placeholder="Preco"
 								value="${produto.vl_preco}"> <input type="text"

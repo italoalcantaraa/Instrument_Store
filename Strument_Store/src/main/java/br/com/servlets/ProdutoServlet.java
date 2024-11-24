@@ -182,9 +182,8 @@ public class ProdutoServlet extends HttpServlet {
 			produto.setVl_preco(preco);
 			produto.setDs_descricao(descricao);
 			produto.setDs_img(img);
-			produto.setFk_marca(3);
-			produto.setFk_fornecedor(6);
-			produto.setFk_categoria(3);
+			produto.setDs_marca(marca);
+			produto.setDs_categoria(categoria);
 		}
 
 
