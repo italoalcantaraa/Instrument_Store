@@ -27,7 +27,6 @@
 				<div class="titulo-cadastro">
 					<h1>Cadastro Produto</h1>
 				</div>
-
 				<div class="divisao-form">
 
 					<div class="formulario-cad">
