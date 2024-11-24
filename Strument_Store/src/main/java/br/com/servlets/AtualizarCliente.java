@@ -107,6 +107,7 @@ public class AtualizarCliente extends HttpServlet {
 
         try {
             clienteDAO.excluir(cpf);
+            response.sendRedirect("../views/home/Home.jsp"); 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             throw new IOException("Erro ao excluir cliente.", e);
