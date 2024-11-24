@@ -73,9 +73,7 @@
         </section>
 
         <article>
-            <button type="submit">
                 <button type="submit"><a href="concluido.html" style="text-decoration: none;color: #241711;">Confirmar Compra!</a></button>
-            </button>
         </article>
     </main>
 
