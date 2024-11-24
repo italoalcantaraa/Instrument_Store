@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat";
+    margin: 0;
+
+}
+:root{
+    --cor-fundo: #F0D085 ;
+    --cor-hover: #F2E1B9;
+    --cor-primaria: black;
+    --cor-botao: #241711;
+    --cor-botao-hover: #2c221d;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Topo */
+
+.topo{
+    background-color: var(--cor-fundo);
+    width: 100%;
+}
+.topo img{
+    width: 150px;
+}
+
+/* Sidebar */
+.sidebar{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    position: relative;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.sidebar button{
+    display: flex;
+    width: 220px;
+    height: 50px;
+    background-color: #ffffff00;
+    font-size: large;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+.sidebar button:hover{
+    border-radius: 5px;
+    font-size: larger;
+}
+.compras{
+    justify-content: center;
+}
+.compras fieldset{
+    border-width: 2px;
+    border-color: #000000;
+}
+#pComp{
+    font-size: larger;
+}
+.compras ul{
+    list-style-type: none;
+    padding: 8px;
+    justify-content: space-around;
+    color: #241711;
+    background-color: #ffffff00;
+    transition: background 1s;
+}
+.compras ul li{
+    margin: 5px;
+}
+.compras ul li a{
+    text-decoration: none;
+    color: inherit;
+    background-color: #ffffff00;
+    transition: 1s;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.compras ul li a:hover{
+    background-color: var(--cor-hover);
+    border-radius: 10px;
+    font-size: large;
+}
+.exit{
+    font-size: large;
+    font-weight: bold;
+}
+.exit a{
+    text-decoration: none;
+    color: #000000;
+}
+.bi-box-arrow-left{
+    transition: 1s;
+}
+.bi-box-arrow-left:hover{
+    font-size: larger;
+}
+
+/*Centro*/
+
+.centerContent{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    position: relative;
+    justify-content: space-around;
+    padding-left: 60px;
+}
+#icon{
+    font-size: 50px;
+    height: 100%;
+}
+#icon hr{
+    height: 100%;
+    
+}
+.welcome{
+    display: flex;
+    margin-top: 40px;
+}
+#nome{
+    font-size: larger;
+}
+
+#titulo{
+    font-size: 25px;
+    margin: 10px;
+}
+.endereco{
+    display: flex;
+    width: 100%;
+}
+.endereco fieldset{
+    background-color: #e9e9e9;
+    width: 350px;
+}
+.endeBotao{
+    margin-left: 60px;
+    margin-top: 70px;
+}
+.endeBotao button{
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: var(--cor-fundo);
+
+}
+.endeBotao button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.atalhos{
+    display: flex;
+    justify-content: space-around;
+
+}
+.atalhos button{
+    width: 220px;
+    height: 80px;
+    background-color: #ffffff00;
+    border-width: 1px;
+    border-color: #747474;
+    font-size: 15px;
+    
+}
+button i{
+    color: var(--cor-fundo);
+    font-size: 25px;
+}
+hr{
+    width: 800px;
+}

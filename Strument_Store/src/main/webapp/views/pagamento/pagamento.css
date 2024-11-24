@@ -1,0 +1,325 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'font';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    animation: slideIn 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+header h6,hr{
+    font-size: 15px;
+    color:lightgrey;
+    margin: 10px;
+}
+
+h6 strong{
+    font-weight: bold;
+    color: black;
+}
+
+hr{
+    width: 5%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background: linear-gradient(67deg, #F0D085, #F1DFB3);
+    box-shadow:  18px 18px 49px #939393,
+                 -3px -3px 49px #ffffff;
+    height: auto;
+    border-radius: 10px;
+    animation: slideIn 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.pagamentos{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: solid black 1px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#ocult1{
+    display: flex;
+    align-items: center;
+}
+
+#ocult1 input{
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #241711;
+    box-sizing: border-box;
+}
+
+#ocult2{
+    width: 100%;
+    max-width: 700px;
+}
+
+.qrcode{
+    padding: 10px;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcode img{
+    height: 100%;
+    width: 100%;
+}
+
+#cartao{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    justify-content: space-evenly;
+    width: auto;
+    border: none;
+}
+
+.cartao{
+    display: flex;
+    justify-content: space-evenly;
+    border: solid black 1px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+
+#ocult1,#ocult2,#ocult3,#ocult4{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border: solid black 1px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+#ocult3,#ocult4{
+    width: 50%;
+    height: 70%;
+    gap: 10px;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+}
+
+
+input[type="radio"] {
+    -webkit-appearance: none; /* Remove a aparência padrão no Chrome/Safari */
+    -moz-appearance: none; /* Remove a aparência padrão no Firefox */
+    appearance: none; /* Remove a aparência padrão em navegadores compatíveis */
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    background-color: #fff; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+/* Estilo para quando o botão está selecionado */
+input[type="radio"]:checked {
+    background: linear-gradient(67deg, #f3ff50, #ffdf5e);
+    border-color: #241711; 
+}
+
+input[type="radio"]:hover {
+    border-color: #29ff37; 
+}
+
+/* Estilo do rótulo */
+label {
+    margin-left: 10px; 
+    font-size: 1rem; 
+    color: #333; 
+    cursor: pointer; 
+}
+
+@keyframes slideIn{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+article button {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #F1DFB3 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #241711;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  article button:hover {
+    background: linear-gradient(67deg, #f8fb4e, #F1DFB3);
+    box-shadow: rgba(255, 241, 85, 0.7) 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+  
+  article button:active {
+    transform: scale(1.025);
+  }
+
+  input[type="text"] {
+    padding: 4px 10px; 
+    font-size: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    outline: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"]:focus {
+    border-color: #241711; 
+    box-shadow: 0 0 10px rgba(41, 194, 255, 0.5);
+}
+
+input[type="number"]{
+    padding: 4px 10px; 
+    font-size: 16px; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    outline: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+input[type="number"]:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+input[type="number"]:focus {
+    border-color: #241711; 
+    box-shadow: 0 0 10px rgba(41, 194, 255, 0.5);
+}
+
+/* Botão do Pix*/
+#ocult1 button{
+    width: 30%;
+    border: none;
+    color: #241711;
+    background-image: linear-gradient(30deg, #F0D085 , #ffe658);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+}
+
+#ocult1 button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+   @media (max-width: 840px) {
+    .cartao {
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center; 
+        gap: 10px; 
+    }
+
+    .cartao p, 
+    .cartao input {
+        display: inline-block; 
+        margin: 0; 
+    }
+
+    .cartao input {
+        margin-left: 5px; 
+    }
+
+    #boleto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ocult2{
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 320px) {
+    .cartao{
+        padding: 0px 50px 0px 0px;
+    }
+
+    .cartao input {
+        padding-left: 20px;
+    }
+
+
+}
