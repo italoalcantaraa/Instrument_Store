@@ -28,9 +28,10 @@
 				<button onclick="removeProduts()">Remover produtos</button>
 			</nav>
 
-			<div class="produtos-carrinho" >
-				<c:forEach var="produto" items="${produtosPedido}">
-					<img alt="" src="${pageContext.request.contextPath}/img/produtos/${produto.ds_img}">
+			<div class="produtos-carrinho">
+				<c:forEach var="produto" items="${produtos}">
+					<img alt=""
+						src="${pageContext.request.contextPath}/img/produtos/${produto.ds_img}">
 					<h3>${produto.ds_descricao}</h3>
 					<div>
 						<p>QTD</p>
@@ -73,10 +74,16 @@
 				</div>
 			</div>
 
-			<div class="finalizar_compra">
-				<a href="/Strument_Store/pedido/salvar?cpf=${param.cpf}">Finalizar compra</a> <a
-					href="/Strument_Store/views/home">Continuar comprando</a>
-			</div>
+
+			<form class="finalizar compra" action="/Strument_Store/pedido/salvar" method="get">
+				<input type="hidden" name="cpf" value="${param.cpf}">
+
+				<c:forEach var="produto" items="${produtos}">
+					<input type="hidden" name="produtos" value="${produto.cod_produto}">
+				</c:forEach>
+
+				<button type="submit">Finalizar compra</button>
+			</form>
 		</section>
 	</main>
 </body>

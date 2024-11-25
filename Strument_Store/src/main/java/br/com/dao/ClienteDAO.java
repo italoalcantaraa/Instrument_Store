@@ -111,13 +111,12 @@ public class ClienteDAO {
 			ResultSet rs = preparedStatement.executeQuery();
 
 			while (rs.next()) {
-				String nome = rs.getString("nome");
-				String email = rs.getString("email");
-				String telefone = rs.getString("telefone");
-				String senha = rs.getString("senha");
-				String cidade =rs.getString("cidade");
+				String nome = rs.getString("ds_nome");
+				String email = rs.getString("ds_email");
+				String telefone = rs.getString("ds_telefone");
+				String senha = rs.getString("ds_senha");
+				String cidade =rs.getString("ds_cidade");
 		
-				
 				objRetorno = new Cliente();
 				objRetorno.setDs_cpf(cpf);
 				objRetorno.setDs_nome(nome);

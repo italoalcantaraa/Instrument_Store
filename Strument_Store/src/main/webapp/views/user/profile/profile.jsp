@@ -22,6 +22,14 @@
             animation: gradientAnimation 8s infinite alternate;
         }
 
+
+		form{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+		
         header {
             background: rgba(255, 255, 255, 0.8);
             padding: 20px;
@@ -113,13 +121,13 @@ article button:active {
     </style>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}" method="post" style="display: inline;" item = "usuario" var="cliente">
+<form action="${pageContext.request.contextPath}" method="post" var="cliente">
 	    <header>
         <figure>
             <img src="${pageContext.request.contextPath}/img/user-avatar-filled-alt-svgrepo-com.svg" alt="Avatar do Usuário">
         </figure>
         <section>
-            <input type="text" value="${cliente.getDs_nome()} }" readonly> <!--nome -->
+            <input type="text" value="${cliente.getDs_nome()}" readonly> <!--nome -->
             <input type="text" value="${cliente.getDs_email()}" readonly><!--email -->
             <input type="text" value="${cliente.getDs_telefone()}" readonly><!--telefone -->
             <input type="password" value="${cliente.getDs_senha()}" readonly> <!--senha -->

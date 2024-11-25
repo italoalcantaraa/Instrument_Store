@@ -171,10 +171,10 @@ public class AtualizarCliente extends HttpServlet {
         try {
             // chama a DAO e trata a exceção ClassNotFoundException
             Cliente clienteAlterar = clienteDAO.buscarPorCpf(cpf);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/views/cliente/cliente-perfil.jsp");
             
             request.setAttribute("cliente", clienteAlterar);
-            dispatcher.forward(request, response);
+            request.getRequestDispatcher("/views/user/profile/profile.jsp").forward(request, response);
+            
         } 
         catch (ClassNotFoundException e) {
             e.printStackTrace();  // logue ou trate de forma apropriada ???

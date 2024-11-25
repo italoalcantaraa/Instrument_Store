@@ -73,7 +73,7 @@
         </section>
 
         <article>
-                <button type="submit"><a href="concluido.html" style="text-decoration: none;color: #241711;">Confirmar Compra!</a></button>
+                <button type="submit"><a href="/Strument_Store/views/pagamento/Concluido.jsp" style="text-decoration: none;color: #241711;">Confirmar Compra!</a></button>
         </article>
     </main>
 

@@ -15,7 +15,6 @@ import br.com.utils.ConnectionBd;
 public class PedidoDAO {
 	public static int efetuarPedido(Pedido pedido, List<Produto> proList ) throws SQLException, ClassNotFoundException {
 		
-		System.out.println("asdasdasdsadadasdasdasdsadas");
 		String sql = "insert into pedido(vl_preco_total, dt_data_pedido, dt_data_entrega, fk_cpf_cliente) values(?,?,?,?);";
 
 		int idNota = 0;
@@ -41,7 +40,8 @@ public class PedidoDAO {
 					for(int i = 0; i < proList.size(); i++) {
 						comandoItem.setInt(1, idNota);
 						comandoItem.setInt(2, proList.get(i).getCod_produto());
-						comandoItem.setInt(3, 1);
+						
+						comandoItem.setInt(3, 3);
 						comandoItem.executeUpdate();
 					}	
 				} catch (Exception e) {
@@ -54,4 +54,11 @@ public class PedidoDAO {
 		}
 
 	}
+	
+	
+	public static int verificaQtdProdutos(Produto produto) {
+		for() {
+			
+		}
+ 	}
 }

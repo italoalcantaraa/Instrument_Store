@@ -35,7 +35,7 @@
 				
 			%>
 			<a
-				href="${pageContext.request.contextPath}/cliente/exibir?cpf=<%= cpf %>">
+				href="${pageContext.request.contextPath}/cliente/editar?cpf=<%= cpf %>">
 				<img alt="user"
 				src="${pageContext.request.contextPath}/img/user.svg">
 			</a>
