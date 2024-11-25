@@ -10,6 +10,7 @@
 <title>Home</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/home/StyleHome.css">
 <link rel="icon" href="../../img/logoIcon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
 	<jsp:include page="../../includes/Header.jsp" />

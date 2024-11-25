@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import br.com.dao.ClienteDAO;
 import br.com.model.Cliente;
 
-@WebServlet(name = "cliente", urlPatterns = { "/cliente", "/cliente/excluir", "/cliente/editar", "/cliente/inserir" })
+@WebServlet(name = "cliente", urlPatterns = { "/cliente", "/cliente/excluir", "/cliente/editar", "/cliente/inserir", "/cliente/exibir"})
 public class AtualizarCliente extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
@@ -194,6 +194,20 @@ public class AtualizarCliente extends HttpServlet {
             clienteDAO.excluir(cpf);
             response.sendRedirect("../views/home/Home.jsp"); 
         } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            throw new IOException("Erro ao excluir cliente.", e);
+        }
+    }
+    
+    private void MostarUsuario(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException{
+    	String cpf = request.getParameter("cpf");
+    	
+    	try{
+    		Cliente vaidarcerto = clienteDAO.buscarPorCpf(cpf);
+    		request.setAttribute("usuario", vaidarcerto);
+    		response.sendRedirect("../views/user/profile/profile.jsp");
+    	}
+    	catch (ClassNotFoundException e) {
             e.printStackTrace();
             throw new IOException("Erro ao excluir cliente.", e);
         }

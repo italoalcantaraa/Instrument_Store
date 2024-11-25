@@ -69,7 +69,7 @@ article{
     justify-content: space-between;
 }
         
-article button {
+.botao{
     appearance: none;
     background-color: #FFFFFF;
     border-radius: 40em;
@@ -94,13 +94,13 @@ article button {
     touch-action: manipulation;
   }
   
-  article #d:hover {
+  article form #d:hover {
     background: linear-gradient(67deg, #ffe097, #fd877e);
     box-shadow: rgba(241, 208, 136, 0.7) 0 -6px 8px inset;
     transform: scale(1.125);
 }
 
-article #e:hover {
+article form #e:hover {
     background: linear-gradient(67deg, #ffe944, #fdc87e);
     box-shadow: rgba(241, 208, 136, 0.7) 0 -6px 8px inset;
     transform: scale(1.125);
@@ -113,30 +113,32 @@ article button:active {
     </style>
 </head>
 <body>
-    <header>
+<form action="${pageContext.request.contextPath}" method="post" style="display: inline;" item = "usuario" var="cliente">
+	    <header>
         <figure>
             <img src="${pageContext.request.contextPath}/img/user-avatar-filled-alt-svgrepo-com.svg" alt="Avatar do Usuário">
         </figure>
         <section>
-            <input type="text" value="Fulano Deutano" readonly> <!--nome -->
-            <input type="text" value="FulanoDeutano123@email.com" readonly><!--email -->
-            <input type="text" value="+087 22 13938203814" readonly><!--telefone -->
-            <input type="password" value="senha123" readonly> <!--senha -->
+            <input type="text" value="${cliente.getDs_nome()} }" readonly> <!--nome -->
+            <input type="text" value="${cliente.getDs_email()}" readonly><!--email -->
+            <input type="text" value="${cliente.getDs_telefone()}" readonly><!--telefone -->
+            <input type="password" value="${cliente.getDs_senha()}" readonly> <!--senha -->
         </section>
         
       <article>
-    		<form action="${pageContext.request.contextPath}/cliente/excluir" method="post" style="display: inline;">
-        		<input type="hidden" name="cpf" value="${Cliente.getDs_cpf()}">
-        			<button type="submit" id="d" onclick="return confirm('Tem certeza de que deseja excluir sua conta?')">
+    		
+        		<input type="hidden" name="cpf" value="${cliente.getDs_cpf()}">
+        			<button type="submit" class="botao" id="d" onclick="return confirm('Tem certeza de que deseja excluir sua conta?')">
             		Deletar Conta
         			</button>
 
-    		</form>
-		    <form action="${pageContext.request.contextPath}/cliente/editar" method="get" style="display: inline;">
-		        <input type="hidden" name="cpf" value="">
-		        <button type="submit" id="e">Editar</button>
-		    </form>
+    
+		   
+		        <input type="hidden" name="cpf" value="${cliente.getDs_cpf()}">
+		        <button type="submit" class="botao" id="e">Editar</button>
+
 </article>
     </header>
+</form>
 </body>
 </html>

@@ -21,7 +21,7 @@
 		</div>
 		
 		<div class="login">
-			<img alt="" src="${pageContext.request.contextPath}/img/user.svg">
+			<a href="/cliente/exibir?cpf="><img alt="" src="${pageContext.request.contextPath}/img/user.svg"></a>
 			<a href="${pageContext.request.contextPath}/views/user/login/LoginUser.jsp" class="login-op">
 				<p><strong>Login |</strong></p>
 				<p><strong>Cadastrar</strong></p>
