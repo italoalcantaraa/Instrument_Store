@@ -15,8 +15,13 @@ public class ConnectionBd {
 			// luis String url = "jdbc:mysql://localhost/InstrumentStore";
 			// luis con = DriverManager.getConnection(url, "root", "luis");
 
+
 			String url = "jdbc:mysql://localhost/InstrumentStore";
-			con = DriverManager.getConnection(url,"root","lus");
+			con = DriverManager.getConnection(url,"root","luis");
+
+			//String url = "jdbc:mysql://localhost/instrumentStore";
+			//con = DriverManager.getConnection(url,"root","ita75802309");
+
 			
 			
 		}catch(SQLException e) {
