@@ -8,7 +8,6 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/views/user/cadastro/CadastroUserStyle.css">
 </head>
 <body>
-
     <div class="container">
         <div class="cabec_container">
             <img src="${pageContext.request.contextPath}/img/logo.png" alt="">

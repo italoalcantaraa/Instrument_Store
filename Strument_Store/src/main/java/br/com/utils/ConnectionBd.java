@@ -16,11 +16,11 @@ public class ConnectionBd {
 			// luis con = DriverManager.getConnection(url, "root", "luis");
 
 
-			String url = "jdbc:mysql://localhost/InstrumentStore";
-			con = DriverManager.getConnection(url,"root","luis");
+			//String url = "jdbc:mysql://localhost/InstrumentStore";
+			//con = DriverManager.getConnection(url,"root","luis");
 
-			//String url = "jdbc:mysql://localhost/instrumentStore";
-			//con = DriverManager.getConnection(url,"root","ita75802309");
+			String url = "jdbc:mysql://localhost/instrumentStore";
+			con = DriverManager.getConnection(url,"root","ita75802309");
 
 			
 			
