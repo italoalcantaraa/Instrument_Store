@@ -14,9 +14,6 @@ public class ProdutoDAO {
 
 	private static Connection con;	
 
-
-
-
 	public static boolean alterar(Produto produto) {
 
 		String sql = "UPDATE produto SET ds_nome = ?, vl_preco = ?, qtd_estoque = ?, ds_descricao = ? where cod_produto = ?;";

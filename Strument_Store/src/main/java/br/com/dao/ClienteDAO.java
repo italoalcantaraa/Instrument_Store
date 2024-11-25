@@ -133,8 +133,11 @@ public class ClienteDAO {
 		return objRetorno;
 	}
 	
-	public boolean loginUser(String email, String senha) throws ClassNotFoundException {
-	    String sql = "SELECT ds_email, ds_senha FROM cliente WHERE ds_email = ? AND ds_senha = ?";
+	public String loginUser(String email, String senha) throws ClassNotFoundException {
+	    String sql = "SELECT ds_cpf, ds_email, ds_senha FROM cliente WHERE ds_email = ? AND ds_senha = ?";
+	    
+	    String cpf = null;
+	    
 	    try (
 	        Connection connection = ConnectionBd.getConnection();
 	        PreparedStatement preparedStatement = connection.prepareStatement(sql)
@@ -142,13 +145,18 @@ public class ClienteDAO {
 	        preparedStatement.setString(1, email);
 	        preparedStatement.setString(2, senha);
 
-	        try (ResultSet rs = preparedStatement.executeQuery()) {
-	            
-	            return rs.next();
+	        try (ResultSet rs = preparedStatement.executeQuery()) {	            
+	            if(rs.next()) {
+	            	cpf = rs.getString("ds_cpf");
+		        	return cpf;
+	            }else {
+	            	System.out.print("erro");
+	            }
 	        }
 	    } catch (SQLException e) {
 	        e.printStackTrace();
-	        return false; 
 	    }
+	    
+		return cpf;
 	}
 }

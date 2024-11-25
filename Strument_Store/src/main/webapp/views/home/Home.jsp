@@ -20,8 +20,9 @@
 	</div>
 
 <div class="produtos">
-	<c:forEach var="produto" items="${produtoList}" >
+	
 			<div class="container_prod">
+			<c:forEach var="produto" items="${produtoList}" >
 				<div class="produto">
 					<div class="img_produto">
 						<img alt="erro" src="${pageContext.request.contextPath}/img/produtos/${produto.ds_img}"/>
@@ -31,12 +32,14 @@
 						<p>R$ ${produto.vl_preco}</p>
 						<img src="${pageContext.request.contextPath}/img/coracao.png" />
 					</div>
-					<form action="/carrinho/inserir" method="get">
-						<input type="submit" value="Adicionar ao Carrinho">
-					</form>
+					
+						<a type="submit" href="/Strument_Store/pedido/inserir?id=${produto.cod_produto}&cpf=${param.cpf}">Adicionar ao Carrinho</a>
+					
 				</div>
+			</c:forEach>
 			</div>
-	</c:forEach>
+	
+	
 </div>
 	<jsp:include page="../../includes/Footer.jsp" />
 </body>

@@ -21,11 +21,17 @@ body > h1{
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	gap: 70px;
+	flex-direction: row;
+	background: red;
 }
 
 .container_prod{
+	display: flex; 
+	flex-wrap: wrap;
+	flex-direction: row;
 	text-decoration: none;
 	color: black;
+	background: red;
 }
 .container_prod:hover{
 	text-decoration: none;	

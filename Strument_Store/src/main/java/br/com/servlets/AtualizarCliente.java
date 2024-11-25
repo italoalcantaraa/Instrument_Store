@@ -65,14 +65,14 @@ public class AtualizarCliente extends HttpServlet {
     	String email = request.getParameter("email");
 		String senha = request.getParameter("senha");
 		
-		System.out.print("email:" + email);
-	    System.out.print("senha" + senha);
 		try {
 			Connection connection = ConnectionBd.getConnection();
 			
-			if (clienteDAO.loginUser(email, senha)) {
-                request.getSession().setAttribute("usuarioLogado", email);
-                response.sendRedirect("../views/home/Home.jsp"); 
+			String cpf = clienteDAO.loginUser(email, senha);
+			System.out.print("cpf:" + cpf);
+			if (cpf != null) {
+                request.setAttribute("cpf", cpf);
+                response.sendRedirect("/Strument_Store/views/home?cpf="+cpf); 
             } else {
                 request.setAttribute("erro", "Usuário ou senha inválidos.");
                 request.getRequestDispatcher("../views/user/login/LoginUser.jsp").forward(request, response);
