@@ -8,12 +8,15 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.sql.Connection;
 import java.sql.SQLException;
 
 import br.com.dao.ClienteDAO;
 import br.com.model.Cliente;
+import br.com.utils.ConnectionBd;
 
-@WebServlet(name = "cliente", urlPatterns = { "/cliente", "/cliente/excluir", "/cliente/editar", "/cliente/inserir", "/cliente/exibir"})
+@WebServlet(name = "cliente", urlPatterns = { "/cliente", "/cliente/excluir", "/cliente/editar", "/cliente/inserir", 
+		"/cliente/exibir", "/cliente/login"})
 public class AtualizarCliente extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
@@ -30,7 +33,10 @@ public class AtualizarCliente extends HttpServlet {
         String method = request.getServletPath();
         try {
             switch (method) {
-                case "/cliente/excluir":
+            case "/cliente/login":
+            	login(request, response);
+            	break;
+            case "/cliente/excluir":
                     excluir(request, response);
                     break;
                 case "/cliente/inserir":
@@ -52,6 +58,29 @@ public class AtualizarCliente extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
         doGet(request, response);
+    }
+    
+    
+    public void login(HttpServletRequest request, HttpServletResponse response) {
+    	String email = request.getParameter("email");
+		String senha = request.getParameter("senha");
+		
+		System.out.print("email:" + email);
+	    System.out.print("senha" + senha);
+		try {
+			Connection connection = ConnectionBd.getConnection();
+			
+			if (clienteDAO.loginUser(email, senha)) {
+                request.getSession().setAttribute("usuarioLogado", email);
+                response.sendRedirect("../views/home/Home.jsp"); 
+            } else {
+                request.setAttribute("erro", "Usuário ou senha inválidos.");
+                request.getRequestDispatcher("../views/user/login/LoginUser.jsp").forward(request, response);
+            }
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
     }
     
 	protected void inserir(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

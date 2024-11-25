@@ -13,7 +13,7 @@
             <img src="${pageContext.request.contextPath}/img/logo.png" alt="">
             <p>Login</p>
         </div>
-        <form action="${pageContext.request.contextPath}/ServletLoginUser" method="post" class="conteudo">
+        <form action="${pageContext.request.contextPath}/cliente/login" method="get" class="conteudo">
             <div class="email_senha">
                 <input type="email" name="email" placeholder="E-mail" id="">
                
